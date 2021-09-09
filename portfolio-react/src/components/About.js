@@ -5,15 +5,15 @@ export const About = () => {
   return (
     <Flex
       direction="column"
-      alignItems="center"
-      marginTop={['3rem', '3rem', '5rem', '5rem']}
+      align="center"
+      marginTop={['2rem', '3rem', '5rem', '5rem']}
     >
       {/* Heading */}
-      <Center paddingLeft="1rem">
+      <Center>
         <Heading
           as="h2"
           size="3xl"
-          visibility={['collapse', 'collapse', 'visible', 'visible']}
+          display={['none', 'none', 'initial', 'initial']}
         >
           Hello, I'm&nbsp;
         </Heading>
@@ -25,17 +25,17 @@ export const About = () => {
       {/* Subheading */}
       <Text
         fontSize="2xl"
-        marginRight="6rem"
         marginTop="0.5rem"
-        visibility={['collapse', 'collapse', 'visible', 'visible']}
+        marginRight={['initial', 'initial', '6rem', '6rem']}
+        // display={['none', 'none', 'initial', 'initial']}
       >
         I build web applications
       </Text>
       <Text
         fontSize="2xl"
-        marginLeft="6rem"
+        marginLeft={['initial', 'initial', '6rem', '6rem']}
         marginTop="0rem"
-        visibility={['collapse', 'collapse', 'visible', 'visible']}
+        // display={['none', 'none', 'initial', 'initial']}
       >
         from front-end to back-end.
       </Text>
