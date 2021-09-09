@@ -1,19 +1,21 @@
-import { Link, Icon, HStack, Flex } from '@chakra-ui/react';
+import { Link, Icon, HStack, Flex, Box } from '@chakra-ui/react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const Nav = () => {
   return (
     <Flex marginTop="2rem" justify="space-between" align="flex-end">
-      <HStack
-        spacing="1rem"
-        visibility={['collapse', 'collapse', 'visible', 'visible']}
-      >
-        <Link fontSize="xl" textDecoration="none">
-          Projects
-        </Link>
-        <Link fontSize="xl">Resume</Link>
-        <Link fontSize="xl">Experience</Link>
-      </HStack>
+      {/* Left */}
+      <Box>
+        <HStack spacing="1rem" display={['none', 'none', 'initial', 'initial']}>
+          <Link fontSize="xl" textDecoration="none">
+            Projects
+          </Link>
+          <Link fontSize="xl">Resume</Link>
+          <Link fontSize="xl">Experience</Link>
+        </HStack>
+      </Box>
+
+      {/* Right */}
       <HStack spacing="1rem">
         <Link
           href="mailto:me@aaronnguyen.dev"
