@@ -1,5 +1,6 @@
 import { Link, Icon, HStack, Flex, Box } from '@chakra-ui/react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import Resume from '../assets/20210901AaronResume.pdf';
 
 export const Nav = () => {
   return (
@@ -10,7 +11,9 @@ export const Nav = () => {
           <Link fontSize="xl" textDecoration="none">
             Projects
           </Link>
-          <Link fontSize="xl">Resume</Link>
+          <Link href={Resume} isExternal fontSize="xl">
+            Resume
+          </Link>
           <Link fontSize="xl">Experience</Link>
         </HStack>
       </Box>
