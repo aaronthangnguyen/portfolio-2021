@@ -21,6 +21,7 @@ export const Nav = () => {
       {/* Right */}
       <HStack spacing="1rem">
         <Link
+          aria-label="Email"
           href="mailto:me@aaronnguyen.dev"
           isExternal
           fontSize="2xl"
@@ -29,6 +30,7 @@ export const Nav = () => {
           <Icon as={FaEnvelope} />
         </Link>
         <Link
+          aria-label="LinkedIn"
           href="https://www.linkedin.com/in/aaron-nguyen-672b46204"
           isExternal
           fontSize="2xl"
@@ -37,6 +39,7 @@ export const Nav = () => {
           <Icon as={FaLinkedin} />
         </Link>
         <Link
+          aria-label="GitHub"
           href="https://github.com/aaronthangnguyen"
           isExternal
           fontSize="2xl"
