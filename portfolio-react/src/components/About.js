@@ -1,5 +1,14 @@
-import { Stack, Flex, Heading, Text, Button, Center } from '@chakra-ui/react';
+import {
+  Stack,
+  Flex,
+  Heading,
+  Text,
+  Button,
+  Center,
+  Link,
+} from '@chakra-ui/react';
 import { FaProjectDiagram, FaPaperclip, FaFlask } from 'react-icons/fa';
+import Resume from '../assets/20210909AaronResume.pdf';
 
 export const About = () => {
   return (
@@ -44,13 +53,33 @@ export const About = () => {
         spacing="1rem"
         direction={['column', 'column', 'row', 'row']}
       >
-        <Button size="lg" leftIcon={<FaProjectDiagram />}>
+        <Button
+          as={Link}
+          href="#"
+          style={{ textDecoration: 'none' }}
+          size="lg"
+          leftIcon={<FaProjectDiagram />}
+        >
           Projects
         </Button>
-        <Button size="lg" colorScheme="yellow" leftIcon={<FaPaperclip />}>
+        <Button
+          as={Link}
+          href={Resume}
+          style={{ textDecoration: 'none' }}
+          size="lg"
+          colorScheme="yellow"
+          leftIcon={<FaPaperclip />}
+          isExternal
+        >
           Resume
         </Button>
-        <Button size="lg" leftIcon={<FaFlask />}>
+        <Button
+          as={Link}
+          href="#"
+          style={{ textDecoration: 'none' }}
+          size="lg"
+          leftIcon={<FaFlask />}
+        >
           Experience
         </Button>
       </Stack>

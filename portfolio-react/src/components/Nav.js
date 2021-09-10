@@ -1,6 +1,6 @@
 import { Link, Icon, HStack, Flex, Box } from '@chakra-ui/react';
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
-import Resume from '../assets/20210901AaronResume.pdf';
+import Resume from '../assets/20210909AaronResume.pdf';
 
 export const Nav = () => {
   return (
