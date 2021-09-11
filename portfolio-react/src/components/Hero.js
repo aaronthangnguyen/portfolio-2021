@@ -4,48 +4,32 @@ import {
   Heading,
   Text,
   Button,
-  Center,
+  Box,
   Link,
 } from '@chakra-ui/react';
 import { FaProjectDiagram, FaPaperclip, FaFlask } from 'react-icons/fa';
 import Resume from '../assets/20210909AaronResume.pdf';
 
-export const About = () => {
+export const Hero = () => {
   return (
-    <Flex
-      direction="column"
-      align="center"
-      marginTop={['2rem', '3rem', '5rem', '5rem']}
-    >
+    <Flex direction="column" align="center" marginTop="3rem">
       {/* Heading */}
-      <Center align="stretch">
-        <Heading
-          as="h2"
-          size="3xl"
-          display={['none', 'none', 'initial', 'initial']}
-        >
+      <Heading as="h2" size="3xl">
+        <Box as="span" display={['none', 'none', 'initial', 'initial']}>
           Hello, I'm&nbsp;
-        </Heading>
-        <Heading as="h2" size="3xl">
-          Aaron 🐝
-        </Heading>
-      </Center>
+        </Box>
+        Aaron 🐝
+      </Heading>
 
       {/* Subheading */}
       <Text
         fontSize="2xl"
         marginTop="0.5rem"
         marginRight={['initial', 'initial', '6rem', '6rem']}
-        // display={['none', 'none', 'initial', 'initial']}
       >
         I build web applications
       </Text>
-      <Text
-        fontSize="2xl"
-        marginLeft={['initial', 'initial', '6rem', '6rem']}
-        marginTop="0rem"
-        // display={['none', 'none', 'initial', 'initial']}
-      >
+      <Text fontSize="2xl" marginLeft={['initial', 'initial', '6rem', '6rem']}>
         from front-end to back-end.
       </Text>
       <Stack
