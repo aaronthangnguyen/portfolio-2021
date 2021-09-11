@@ -18,7 +18,7 @@ export const About = () => {
       marginTop={['2rem', '3rem', '5rem', '5rem']}
     >
       {/* Heading */}
-      <Center>
+      <Center align="stretch">
         <Heading
           as="h2"
           size="3xl"
