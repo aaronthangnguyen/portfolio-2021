@@ -1,7 +1,7 @@
 import React from 'react';
 import { About } from './components/About';
 
-import '@fontsource/roboto';
+import '@fontsource/ubuntu';
 
 import { ChakraProvider, Container } from '@chakra-ui/react';
 import theme from './theme';

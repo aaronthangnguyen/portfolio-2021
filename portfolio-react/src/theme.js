@@ -6,8 +6,8 @@ const theme = extendTheme({
     initialColorMode: 'dark',
   },
   fonts: {
-    heading: 'Roboto',
-    body: 'Roboto',
+    heading: 'Ubuntu',
+    body: 'Ubuntu',
   },
 });
 
