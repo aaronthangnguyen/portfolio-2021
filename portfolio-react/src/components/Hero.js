@@ -12,7 +12,11 @@ import Resume from '../assets/20210909AaronResume.pdf';
 
 export const Hero = () => {
   return (
-    <Flex direction="column" align="center" marginTop="3rem">
+    <Flex
+      direction="column"
+      align="center"
+      marginTop={['2rem', '2rem', '4rem', '4rem']}
+    >
       {/* Heading */}
       <Heading as="h2" size="3xl">
         <Box as="span" display={['none', 'none', 'initial', 'initial']}>
