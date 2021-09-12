@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <Center marginBottom="0.5rem" flexDirection="column" textAlign="center">
       <Divider />
-      <Heading as={Text} marginTop="0.5rem" size="md">
+      <Heading as={Text} marginTop="1rem" size="md">
         Made with ❤️ by Aaron Nguyen
       </Heading>
       <Heading as={Text} size="sm">
