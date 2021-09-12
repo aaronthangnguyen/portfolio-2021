@@ -1,5 +1,9 @@
-import { Heading } from '@chakra-ui/layout';
+import { Flex, Heading } from '@chakra-ui/layout';
 
 export const Experience = () => {
-  return <Heading size="lg">🌊 Experience</Heading>;
+  return (
+    <Flex>
+      <Heading size="lg">🌊 Experience</Heading>
+    </Flex>
+  );
 };
