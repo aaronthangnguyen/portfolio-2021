@@ -8,7 +8,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 import { FaProjectDiagram, FaPaperclip, FaFlask } from 'react-icons/fa';
-import Resume from '../assets/20210909AaronResume.pdf';
+import Resume from '../assets/20210914AaronResume.pdf';
 
 export const Hero = () => {
   return (
